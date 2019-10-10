@@ -7,7 +7,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include <windows.h>
+#include <unistd.h>
 #include "Enemy.h"
 #include "Bullet_player.h"
 #include "Bullet_enemy.h"

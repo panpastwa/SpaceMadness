@@ -70,14 +70,14 @@ int game(sf::RenderWindow &window, int level, int points_collected)
     window.draw(sPlayer);
     window.draw(text);
     window.display();
-    Sleep(3000);
+    sleep(3);
 
     while (window.isOpen())
     {
         // Player down, saving score, backing to menu
         if (player_down == 5)
         {
-            Sleep(1500);
+            sleep(1.5);
             sBackground.setTexture(background_over);
             points_text.setCharacterSize(80);
             points_text.setPosition(300, 420);
@@ -105,7 +105,7 @@ int game(sf::RenderWindow &window, int level, int points_collected)
             for(int i=0; i<3; i++)
                 score_file << scores[i] << std::endl;
             score_file.close();
-            Sleep(3000);
+            sleep(3);
             return -1;
         }
 
