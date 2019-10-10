@@ -1,6 +1,3 @@
-#ifndef KOLEJNAGRA_BULLET_PLAYER_H
-#define KOLEJNAGRA_BULLET_PLAYER_H
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -14,5 +11,3 @@ public:
     void create(int x);
     void move();
 };
-
-#endif //KOLEJNAGRA_BULLET_PLAYER_H

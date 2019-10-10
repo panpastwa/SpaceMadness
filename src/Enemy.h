@@ -1,6 +1,3 @@
-#ifndef KOLEJNAGRA_ENEMY_H
-#define KOLEJNAGRA_ENEMY_H
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
@@ -25,6 +22,3 @@ public:
     void boom_animation(int n);
 
 };
-
-
-#endif //KOLEJNAGRA_ENEMY_H

@@ -1,6 +1,3 @@
-#ifndef KOLEJNAGRA_BONUS_H
-#define KOLEJNAGRA_BONUS_H
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
@@ -20,6 +17,3 @@ public:
     void create(int location_x, int location_y, int n);
     void move();
 };
-
-
-#endif //KOLEJNAGRA_BONUS_H
