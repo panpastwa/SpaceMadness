@@ -12,7 +12,7 @@ int main()
 
     // Playing music
     sf::Music music;
-    music.openFromFile("music.wav");
+    music.openFromFile("data/music.wav");
     music.setLoop(true);
     music.play();
 

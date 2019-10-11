@@ -4,7 +4,7 @@ void menu(sf::RenderWindow &window)
 {
     std::string showing_now = "menu";
     std::fstream score_file;
-    score_file.open("score.txt", std::ios::in);
+    score_file.open("data/score.txt", std::ios::in);
     std::string best_score, line;
     for(int i=0; i<3; i++)
     {
@@ -12,7 +12,7 @@ void menu(sf::RenderWindow &window)
         best_score += std::to_string(i+1)+ ".\t" + line + "\n";
     }
     sf::Font font;
-    font.loadFromFile("arial.ttf");
+    font.loadFromFile("data/arial.ttf");
 
     sf::Text text;
     text.setFont(font);
@@ -24,8 +24,8 @@ void menu(sf::RenderWindow &window)
 
 
     sf::Texture background_menu,background_scores;
-    background_menu.loadFromFile("background_menu.png");
-    background_scores.loadFromFile("background_scores.png");
+    background_menu.loadFromFile("data/background_menu.png");
+    background_scores.loadFromFile("data/background_scores.png");
     sf::Sprite sBackground(background_menu);
 
     while (window.isOpen())

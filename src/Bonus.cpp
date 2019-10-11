@@ -6,7 +6,7 @@ void Bonus::create(int location_x, int location_y, int n) {
     speed = (n + 1) * 3;
     exists = true;
     show_text_counter = 0;
-    font.loadFromFile("arial.ttf");
+    font.loadFromFile("data/arial.ttf");
     points_added.setString("+ " + std::to_string(speed * 5));
     points_added.setFont(font);
     points_added.setCharacterSize(20);
@@ -14,13 +14,13 @@ void Bonus::create(int location_x, int location_y, int n) {
     switch (n)
     {
         case 0:
-            texture.loadFromFile("fruit0.png");
+            texture.loadFromFile("data/fruit0.png");
             break;
         case 1:
-            texture.loadFromFile("fruit1.png");
+            texture.loadFromFile("data/fruit1.png");
             break;
         case 2:
-            texture.loadFromFile("fruit2.png");
+            texture.loadFromFile("data/fruit2.png");
             break;
         default:
             std::cout << "Wrong argument to create fruit!\n";

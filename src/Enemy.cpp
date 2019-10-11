@@ -7,12 +7,12 @@ void Enemy::create(){
     collision_state = 0;
     shoot_frequency = rand()% 20 + 50;
     shoot_counter = 0;
-    enemy.loadFromFile("enemy0.png");
-    boomA.loadFromFile("boom0A.png");
-    boomB.loadFromFile("boom0B.png");
-    boomC.loadFromFile("boom0C.png");
-    boomD.loadFromFile("boom0D.png");
-    font.loadFromFile("arial.ttf");
+    enemy.loadFromFile("data/enemy0.png");
+    boomA.loadFromFile("data/boom0A.png");
+    boomB.loadFromFile("data/boom0B.png");
+    boomC.loadFromFile("data/boom0C.png");
+    boomD.loadFromFile("data/boom0D.png");
+    font.loadFromFile("data/arial.ttf");
     points_added.setString("+ 15");
     points_added.setFont(font);
     points_added.setCharacterSize(20);

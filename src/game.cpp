@@ -8,13 +8,13 @@ int game(sf::RenderWindow &window, int level, int points_collected)
 
     // Creating a background and a player
     sf::Texture background, background_over, player, down1, down2, down3, down4;
-    background.loadFromFile("background_game.png");
-    background_over.loadFromFile("background_over.png");
-    player.loadFromFile("player.png");
-    down1.loadFromFile("player_down1.png");
-    down2.loadFromFile("player_down2.png");
-    down3.loadFromFile("player_down3.png");
-    down4.loadFromFile("player_down4.png");
+    background.loadFromFile("data/background_game.png");
+    background_over.loadFromFile("data/background_over.png");
+    player.loadFromFile("data/player.png");
+    down1.loadFromFile("data/player_down1.png");
+    down2.loadFromFile("data/player_down2.png");
+    down3.loadFromFile("data/player_down3.png");
+    down4.loadFromFile("data/player_down4.png");
     sf::Sprite sBackground, sPlayer;
     sBackground.setTexture(background);
     sPlayer.setTexture(player);
@@ -26,7 +26,7 @@ int game(sf::RenderWindow &window, int level, int points_collected)
 
     // Creating information about current level and points
     sf::Font font;
-    font.loadFromFile("arial.ttf");
+    font.loadFromFile("data/arial.ttf");
     sf::Text text, points_text;
 
     text.setFont(font);
@@ -86,7 +86,7 @@ int game(sf::RenderWindow &window, int level, int points_collected)
             window.draw(points_text);
             window.display();
             std::fstream score_file;
-            score_file.open("score.txt", std::ios::in);
+            score_file.open("data/score.txt", std::ios::in);
             int scores[3];
             std::string line;
             for(int i=0; i<3; i++)
@@ -101,7 +101,7 @@ int game(sf::RenderWindow &window, int level, int points_collected)
                 }
             }
             score_file.close();
-            score_file.open("score.txt", std::ios::out);
+            score_file.open("data/score.txt", std::ios::out);
             for(int i=0; i<3; i++)
                 score_file << scores[i] << std::endl;
             score_file.close();
