@@ -23,9 +23,7 @@ void Enemy::create(){
 
 bool Enemy::check_collision(sf::FloatRect entity){
     sf::FloatRect boundingBox = sEnemy.getGlobalBounds();
-    if (boundingBox.intersects(entity))
-    {
-        std::cout << "Collision with entity!\n";
+    if (boundingBox.intersects(entity)){
         collision_state = 1;
         return true;
     }

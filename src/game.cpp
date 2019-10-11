@@ -202,7 +202,6 @@ int game(sf::RenderWindow &window, int level, int points_collected)
                 number_of_bullets++;
                 temp = temp->next;
             }
-            std::cout << "Number of bullets = " << number_of_bullets << std::endl;
         }
 
         // Enemy's bullets
@@ -274,7 +273,6 @@ int game(sf::RenderWindow &window, int level, int points_collected)
                 draw_bullets++;
             }
         }
-        std::cout << "Draw bullets = " << draw_bullets << std::endl;
 
         // Drawing enemy ships
         for(int i=0; i<number_of_enemies; i++)
