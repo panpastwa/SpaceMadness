@@ -1,5 +1,6 @@
 SRC = src
 OBJ = obj
+EXECUTABLE = space_madness
 
 SOURCES = $(wildcard $(SRC)/*.cpp)
 OBJECTS = $(patsubst $(SRC)/%.cpp, $(OBJ)/%.o, $(SOURCES))
@@ -12,10 +13,10 @@ $(OBJ)/%.o: $(SRC)/%.cpp
 	$(CC) -c $< -o $@
 
 main: $(OBJECTS)
-	$(CC) $^ $(LIBS)
+	$(CC) $^ $(LIBS) -o $(EXECUTABLE)
 
 run: main
-	./a.out
+	./$(EXECUTABLE)
 
 clean:
-	rm -r $(OBJ)
+	rm -rf $(OBJ) $(EXECUTABLE)
