@@ -1,6 +1,6 @@
 SRC = src
 OBJ = obj
-EXECUTABLE = space_madness
+EXECUTABLE = SpaceMadness
 
 SOURCES = $(wildcard $(SRC)/*.cpp)
 OBJECTS = $(patsubst $(SRC)/%.cpp, $(OBJ)/%.o, $(SOURCES))
