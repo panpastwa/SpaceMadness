@@ -1,7 +1,8 @@
 # SpaceMadness :ringed_planet:
 
 #### What is it?
-Game inspired by arcade game Space Invaders.
+Game inspired by arcade game Space Invaders. Shoot down all the spaceships,
+collect fruits for bonus points and stay alive for as long as you can!
 ![Gameplay Image](data/gameplay.png "Gameplay")
 
 Game written in C++ on Linux platform using SFML library.
